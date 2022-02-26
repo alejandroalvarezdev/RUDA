@@ -1,0 +1,15 @@
+.details{
+    width: 100%;
+
+}
+
+table {
+    width: 100%;
+    }
+.mat-table {
+    background: #ffffff;
+
+}
+.mat-cell, .mat-footer-cell {
+    color: black;
+}

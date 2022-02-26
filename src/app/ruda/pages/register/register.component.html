@@ -1,0 +1,90 @@
+<div class="profile">
+    <img src="assets/copameLogo.jpg" alt="">
+
+</div>
+<hr>
+<div class="row">
+    <div class="col">
+
+        <form (ngSubmit)="guardar(formulario.value)" #formulario="ngForm" >
+            <h2>Generales</h2>
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">nombre</label>
+                <div class="col-sm-9">
+                    <input type="text"
+                            class="form-control"
+                            ngModel
+                            name="nombre"
+                            placeholder="nombre">
+                            <!-- <span class="form-text text-danger" >solo letras</span> -->
+                </div>
+            </div>
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">pais</label>
+                <div class="col-sm-9">
+                    <input type="text"
+                            class="form-control"
+                            ngModel
+                            name="pais"
+                            placeholder="pais">
+                            
+                </div>
+            </div>
+            <!-- input end -->
+
+            
+                <hr>
+                <h2>Deporte</h2>
+            <!-- input start -->
+                <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">deporte</label>
+                <div class="col-sm-9">
+                    <input type="text"
+                            class="form-control"
+                            ngModel
+                            name="deporte"
+                            placeholder="deporte">
+                            
+                </div>
+            </div>
+            <!-- input end -->
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Otros Deportes practicados</label>
+                <div class="col-sm-9">
+                    <input type="text"
+                            class="form-control"
+                            ngModel
+                            name="otrosDeportes"
+                            placeholder="Otros deportes practicados">
+                            
+                </div>
+            </div>
+            
+
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Clasificación</label>
+                <div class="col-sm-9">
+                    <input type="text"
+                            class="form-control"
+                            ngModel
+                            name="clasificacion"
+                            placeholder="Clasificación">
+                            <span class="form-text text-primary" >"Poner todas"</span>
+                            
+                </div>
+            </div>
+            <!-- input end -->
+
+
+            <div class="row">
+                <div class="col-sm-11">
+                    <button type="submit"
+                            class="btn btn-primary float-end">guardar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
