@@ -6,6 +6,9 @@ import { MaterialModule } from '../material/material.module';
 import { GeneralComponent } from './pages/general/general.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormComponent } from './pages/form/form.component';
+
+
 
 
 
@@ -15,7 +18,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     DetailsComponent,
     GeneralComponent,
-    RegisterComponent
+    RegisterComponent,
+    FormComponent
   ],
   imports: [
     CommonModule,

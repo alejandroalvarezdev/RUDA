@@ -4,3 +4,14 @@
 .profile img{
   width: 250px;
 }
+form{
+  color: black;
+  background-color: #071a2c;
+}
+
+label,h2{color:aliceblue}
+
+.mat-form-field{
+  color: white;
+  width: 100%;
+}

@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {FormControl} from '@angular/forms';
+
+interface Food {
+  value: string;
+  viewValue: string;
+}
 
 @Component({
   selector: 'app-register',
@@ -8,13 +14,50 @@ import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
 })
 export class RegisterComponent implements OnInit {
 
+  toppings = new FormControl();
+  toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
+  
+  checked = false;
+  indeterminate = false;
+  labelPosition: 'before' | 'after' = 'after';
+  disabled = false;
+
+
+  formulario:FormGroup = this.fb.group({
+    nombre:[,Validators.required,Validators.minLength(10)],
+    pais:['México'],
+    deporte:[],
+    otrosDep:[],
+    clasificacion:[],
+    pruebaPrincipal:[],
+    
+  })
+  
+
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
   }
 
-  guardar(formulario:NgForm){
+
+
+  guardar(formulario:any){
     console.log(formulario);
+    
+  }
+  errors(formulario: FormGroup, controlName: string): any | undefined{
+    if (formulario.controls[controlName].touched) {
+      if (formulario.controls[controlName].hasError('required')) {
+        return 'Este campo es obligatorio';
+      }
+      
+      
+    }
+    // if (formulario.controls[controlName].touched) {
+    //   if (formulario.controls[controlName].hasError('required'))
+    //     return 'Este campo es obligatorio';
+      
+    // }
     
   }
 

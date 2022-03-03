@@ -8,6 +8,7 @@ import { MaterialModule } from './material/material.module';
 import { RudaModule } from './ruda/ruda.module';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,8 +19,10 @@ import { RudaModule } from './ruda/ruda.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    RudaModule
+    RudaModule,
+   
   ],
+ 
   providers: [],
   bootstrap: [AppComponent]
 })
