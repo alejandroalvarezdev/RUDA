@@ -229,13 +229,14 @@
             </div>
             <!-- input end -->
 
+            <!-- input start -->
             <div class="mb-3 row">
                 <label class="col-sm-2 col-form-label"  for="">Genero</label>
                 <div class="col-sm-9">
 
                     
             <mat-form-field  appearance="fill">
-            <mat-label  >Deportes</mat-label>
+            <mat-label  >H/M</mat-label>
             <select  matNativeControl >
                 <option  value="natacion">Hombre</option>
                 <option value="saab">Mujer</option>
@@ -244,20 +245,174 @@
             </mat-form-field>
                 </div>
             </div>
+            <!-- input end -->
             
+            <!-- input start -->
             <div class="mb-3 row">
-                <label class="col-sm-2 col-form-label"  for="">Otros Deportes practicados</label>
+                <label class="col-sm-2 col-form-label"  for="">Fecha de nacimiento</label>
                 <div class="col-sm-9">
 
                     
                     <mat-form-field appearance="fill">
-                        <mat-label>Choose a date</mat-label>
+                        <mat-label>mes/día/año</mat-label>
                         <input matInput [matDatepicker]="picker">
                         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                         <mat-datepicker #picker></mat-datepicker>
                     </mat-form-field>
                 </div>
             </div>
+            <!-- input end -->
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Edad </label>
+                <div class="col-sm-9">
+                    <mat-form-field  appearance="fill">
+                        <mat-label>Edad</mat-label>
+                        <input type="number"  matInput>
+                    </mat-form-field>
+                </div>
+            </div>
+            <!-- input end -->
+
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Lugar de nacimiento </label>
+                <div class="col-sm-9">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Dirección</mat-label>
+                        <textarea matInput placeholder="Ex. 100 Main St">México Ciudad de México</textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+            <!-- input end -->
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Estado civil</label>
+                <div class="col-sm-9">
+
+                    
+            <mat-form-field  appearance="fill">
+            <mat-label  >H/M</mat-label>
+            <select  matNativeControl >
+                <option  value="natacion">Casad@</option>
+                <option value="saab">Solter@</option>
+            
+            </select>
+            </mat-form-field>
+                </div>
+            </div>
+            <!-- input end -->
+
+            
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Telefonos celulares </label>
+                <div class="col-sm-9">
+                    <mat-form-field  appearance="fill">
+                        <mat-label>Celular</mat-label>
+                        <input type="number"  matInput>
+                    </mat-form-field>
+                </div>
+            </div>
+            <!-- input end -->
+
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Correo electronico </label>
+                <div class="col-sm-9">
+                    
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input type="email" matInput  placeholder="Ex. pat@copame.com">
+                </mat-form-field>
+                </div>
+            </div>
+            <!-- input end -->
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Cuentas de Facebook </label>
+                <div class="col-sm-9">
+                    
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Facebook</mat-label>
+                    <input type="email" matInput  placeholder="Ex. pat@gmail.com">
+                </mat-form-field>
+                </div>
+            </div>
+            <!-- input end -->
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Cuentas de Instagram </label>
+                <div class="col-sm-9">
+                    
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Instagram</mat-label>
+                    <input type="email" matInput  placeholder="Ex. pat@gmail.com">
+                </mat-form-field>
+                </div>
+            </div>
+            <!-- input end -->
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Cuentas de Linkedin </label>
+                <div class="col-sm-9">
+                    
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Linkedin</mat-label>
+                    <input type="email" matInput  placeholder="Ex. pat@gmail.com">
+                </mat-form-field>
+                </div>
+            </div>
+            <!-- input end -->
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Otras redes sociales </label>
+                <div class="col-sm-9">
+                    
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Otras</mat-label>
+                    <input type="email" matInput  placeholder="Ex. pat@gmail.com">
+                </mat-form-field>
+                </div>
+            </div>
+            <!-- input end -->
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Curp </label>
+                <div class="col-sm-9">
+                    
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Curp</mat-label>
+                    <input  matInput  >
+                </mat-form-field>
+                </div>
+            </div>
+            <!-- input end -->
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">RFC </label>
+                <div class="col-sm-9">
+                    
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>RFC</mat-label>
+                    <input  matInput  >
+                </mat-form-field>
+                </div>
+            </div>
+            <!-- input end -->
+            
+
+            
 
 
             <div class="row">
