@@ -6,7 +6,7 @@
 <div class="row">
     <div class="col">
 
-        <form [formGroup]="formulario" >
+        <form (ngSubmit)="guardar()" [formGroup]="formulario" >
             <h2>Generales</h2>
 
             <div class="mb-3 row">
@@ -14,7 +14,7 @@
                 <div class="col-sm-9">
                     <mat-form-field  appearance="fill">
                         <mat-label>Dos appelidos y nombre</mat-label>
-                        <input  matInput >
+                        <input formControlName="nombre" matInput >
                     </mat-form-field>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                 <div class="col-sm-9">
                     <mat-form-field  appearance="fill">
                         <mat-label>Pais al que pertenece</mat-label>
-                        <input  matInput>
+                        <input formControlName="pais"  matInput>
                     </mat-form-field>
                 </div>
             </div>
@@ -400,16 +400,45 @@
 
             <!-- input start -->
             <div class="mb-3 row">
-                <label class="col-sm-2 col-form-label"  for="">RFC </label>
+                <label class="col-sm-2 col-form-label"  for="">RFC</label>
                 <div class="col-sm-9">
+
                     
-                <mat-form-field class="example-full-width" appearance="fill">
-                    <mat-label>RFC</mat-label>
-                    <input  matInput  >
-                </mat-form-field>
+            <mat-form-field  appearance="fill">
+            <mat-label  >H/M</mat-label>
+            <select formControlName="rfc" matNativeControl >
+                <option  value="conH">Con RFC</option>
+                <option value="sinH">sin RFC</option>
+            
+            </select>
+            </mat-form-field>
                 </div>
             </div>
             <!-- input end -->
+
+            <!-- input start -->
+            <div class="desicionContainer" *ngIf="formulario.value.rfc == 'conH'">
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label"  for="">Homoclave</label>
+                    <div class="col-sm-9">
+    
+                        
+                <mat-form-field  appearance="fill">
+                <mat-label  >H/M</mat-label>
+                <select  matNativeControl >
+                    <option  value="natacion">Hombre</option>
+                    <option value="saab">Mujer</option>
+                
+                </select>
+                </mat-form-field>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- input end -->
+
+            
             
 
             
@@ -437,6 +466,9 @@
         
                 <span>Value</span>
                 <pre>{{ formulario.value | json }}</pre>
+
+                <span>nombre</span>
+                <pre>{{ formulario.value.nombre|json }}</pre>
         
                 
             </div>

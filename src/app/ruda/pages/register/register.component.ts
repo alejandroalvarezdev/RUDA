@@ -20,16 +20,18 @@ export class RegisterComponent implements OnInit {
   checked = false;
   indeterminate = false;
   labelPosition: 'before' | 'after' = 'after';
-  disabled = false;
+  name: string = '';
+
 
 
   formulario:FormGroup = this.fb.group({
-    nombre:[,Validators.required,Validators.minLength(10)],
-    pais:['México'],
+    nombre:[''],
+    pais:[''],
     deporte:[],
     otrosDep:[],
     clasificacion:[],
     pruebaPrincipal:[],
+    rfc:['']
     
   })
   
@@ -41,8 +43,8 @@ export class RegisterComponent implements OnInit {
 
 
 
-  guardar(formulario:any){
-    console.log(formulario);
+  guardar(){
+    console.log(this.formulario.value);
     
   }
   errors(formulario: FormGroup, controlName: string): any | undefined{
@@ -53,11 +55,7 @@ export class RegisterComponent implements OnInit {
       
       
     }
-    // if (formulario.controls[controlName].touched) {
-    //   if (formulario.controls[controlName].hasError('required'))
-    //     return 'Este campo es obligatorio';
-      
-    // }
+    
     
   }
 
