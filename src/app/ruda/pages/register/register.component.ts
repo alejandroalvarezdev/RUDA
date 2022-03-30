@@ -31,7 +31,8 @@ export class RegisterComponent implements OnInit {
     otrosDep:[],
     clasificacion:[],
     pruebaPrincipal:[],
-    rfc:['']
+    rfc:[''],
+    gastosMed:['']
     
   })
   

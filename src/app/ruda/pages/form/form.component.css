@@ -3,3 +3,30 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .steeper{
+    width: 100%;
+    height: 40vh;
+  
+  }
+  .example-stepper {
+    margin-top: 8px;
+  }
+  
+  .mat-form-field {
+    margin-top: 16px;
+    margin-right: 1em;
+  }
+  
+  .col-form-label{
+    color: aliceblue;
+  }
+  .mat-button{
+    background-color: aliceblue;
+    margin: 0.5em;
+  }
+
+  .mat-input-element{
+    color: aliceblue;
+  }
+  

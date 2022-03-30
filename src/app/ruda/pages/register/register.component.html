@@ -229,6 +229,9 @@
             </div>
             <!-- input end -->
 
+            <hr>
+                <h2>Información personal</h2>
+
             <!-- input start -->
             <div class="mb-3 row">
                 <label class="col-sm-2 col-form-label"  for="">Genero</label>
@@ -405,10 +408,10 @@
 
                     
             <mat-form-field  appearance="fill">
-            <mat-label  >H/M</mat-label>
+            <mat-label  >H/sH</mat-label>
             <select formControlName="rfc" matNativeControl >
-                <option  value="conH">Con RFC</option>
-                <option value="sinH">sin RFC</option>
+                <option  value="conH">Con Homoclave</option>
+                <option value="sinH">sin Homoclave</option>
             
             </select>
             </mat-form-field>
@@ -419,18 +422,34 @@
             <!-- input start -->
             <div class="desicionContainer" *ngIf="formulario.value.rfc == 'conH'">
                 <div class="mb-3 row">
-                    <label class="col-sm-2 col-form-label"  for="">Homoclave</label>
+                    <label class="col-sm-2 col-form-label"  for="">RFC</label>
                     <div class="col-sm-9">
     
                         
                 <mat-form-field  appearance="fill">
-                <mat-label  >H/M</mat-label>
-                <select  matNativeControl >
-                    <option  value="natacion">Hombre</option>
-                    <option value="saab">Mujer</option>
-                
-                </select>
+                    <mat-label>Introduzca RFC con Homoclave</mat-label>
+                    <input  matInput>
                 </mat-form-field>
+                
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- input end -->
+
+            <!-- input start -->
+             <div class="desicionContainer" *ngIf="formulario.value.rfc == 'sinH'">
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label"  for="">RFC</label>
+                    <div class="col-sm-9">
+    
+                        
+                <mat-form-field  appearance="fill">
+                    <mat-label>Introduzca RFC sin Homoclave</mat-label>
+                    <input  matInput>
+                </mat-form-field>
+                
                     </div>
                 </div>
             </div>
@@ -439,7 +458,173 @@
             <!-- input end -->
 
             
+            <!-- input start -->
+            <div class="desicionContainer" *ngIf="formulario.value.rfc == 'conH'||formulario.value.rfc == 'sinH'">
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Curp </label>
+                <div class="col-sm-9">
+                
+                    <input type="file" class="file-upload" onchange="console.log(event.target.files)">
+                    
+                
+                </div>
+            </div>
+            </div>
+            <!-- input end -->
+
             
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Seguro de Gastos Medicos</label>
+                <div class="col-sm-9">
+
+                    
+            <mat-form-field  appearance="fill">
+            <mat-label  >Tipo</mat-label>
+            <select formControlName="gastosMed" matNativeControl >
+                <option  value="publico">Público</option>
+                <option value="privado">Privado</option>
+                <option value="otro">Otro</option>
+            
+            </select>
+            </mat-form-field>
+                </div>
+            </div>
+            <!-- input end -->
+
+            <!-- input start -->
+            <div class="desicionContainer" *ngIf="formulario.value.gastosMed == 'publico'">
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label"  for="">Institución</label>
+                    <div class="col-sm-9">
+    
+                        
+                <mat-form-field  appearance="fill">
+                    <mat-label>Nombre de su Institución Publica de Salúd</mat-label>
+                    <input  matInput>
+                </mat-form-field>
+                
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- input end -->
+
+            <!-- input start -->
+            <div class="desicionContainer" *ngIf="formulario.value.gastosMed == 'publico'">
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label"  for="">Número de Seguridad Social</label>
+                    <div class="col-sm-9">
+    
+                        
+                <mat-form-field  appearance="fill">
+                    <mat-label>NSS</mat-label>
+                    <input  matInput>
+                </mat-form-field>
+                
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- input end -->
+
+            <!-- input start -->
+            <div class="desicionContainer" *ngIf="formulario.value.gastosMed == 'privado'|| formulario.value.gastosMed == 'otro'">
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label"  for="">Institución</label>
+                    <div class="col-sm-9">
+    
+                        
+                <mat-form-field  appearance="fill">
+                    <mat-label>Compañía</mat-label>
+                    <input  matInput>
+                </mat-form-field>
+                
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- input end -->
+
+            
+            <!-- input start -->
+            <div class="desicionContainer" *ngIf="formulario.value.gastosMed == 'privado' || formulario.value.gastosMed == 'otro'">
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label"  for="">Número de Poliza</label>
+                    <div class="col-sm-9">
+    
+                        
+                <mat-form-field  appearance="fill">
+                    <mat-label>Poliza</mat-label>
+                    <input  matInput>
+                </mat-form-field>
+                
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- input end -->
+
+            <!-- input start -->
+            
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label"  for="">Datos del INE</label>
+                    <div class="col-sm-9">
+    
+                        
+                <mat-form-field  appearance="fill">
+                    <mat-label>Clave de Elector</mat-label>
+                    <input  matInput>
+                </mat-form-field>
+                
+                    </div>
+                </div>
+            
+
+            
+            <!-- input end -->
+
+            <!-- input start -->
+                
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Año de registro </label>
+                <div class="col-sm-9">
+
+                    
+            <mat-form-field  appearance="fill">
+                <mat-label>Año de registro al INE</mat-label>
+                <input  matInput>
+            </mat-form-field>
+            
+                </div>
+            </div>
+    
+
+    
+            <!-- input end -->
+
+            <!-- input start -->
+                
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Fecha de vencimiento </label>
+                <div class="col-sm-9">
+
+                    
+            <mat-form-field  appearance="fill">
+                <mat-label>Año de registro al INE</mat-label>
+                <input  matInput>
+            </mat-form-field>
+            
+                </div>
+            </div>
+    
+
+    
+            <!-- input end -->
 
             
 
