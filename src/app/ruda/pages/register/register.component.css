@@ -9,7 +9,8 @@ form{
   background-color: #071a2c;
 }
 
-label,h2{color:aliceblue}
+label,h2,h3,u{color:aliceblue}
+
 
 .mat-form-field{
   color: white;
@@ -21,4 +22,7 @@ hr{
 }
 input[type="file" i]{
   color: aliceblue;
+}
+u{
+  color: rgb(200, 200, 0);
 }
