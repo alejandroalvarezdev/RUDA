@@ -408,17 +408,10 @@
 
                     
             <mat-form-field  appearance="fill">
-<<<<<<< HEAD
-            <mat-label  >H/SH</mat-label>
-            <select formControlName="rfc"  matNativeControl >
-                <option  value="homoclave">Con Homoclave</option>
-                <option value="sinHomoclave">Sin Homoclave</option>
-=======
             <mat-label  >H/sH</mat-label>
             <select formControlName="rfc" matNativeControl >
                 <option  value="conH">Con Homoclave</option>
                 <option value="sinH">sin Homoclave</option>
->>>>>>> 1cb5b9a50369d3758ec03427fc3bc5ef761dee4e
             
             </select>
             </mat-form-field>
@@ -427,37 +420,6 @@
             <!-- input end -->
 
             <!-- input start -->
-<<<<<<< HEAD
-            <div *ngIf="formulario.value.rfc == 'homoclave'" class="formularioCondicional">
-                <div class="mb-3 row">
-                    <label class="col-sm-2 col-form-label"  for="">RFC Homoclave </label>
-                    <div class="col-sm-9">
-                        
-                    <mat-form-field class="example-full-width" appearance="fill">
-                        <mat-label>RFC con homoclave</mat-label>
-                        <input  matInput  >
-                    </mat-form-field>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- input end -->
-
-            <!-- input start -->
-            <div *ngIf="formulario.value.rfc == 'sinHomoclave'" class="formularioCondicional">
-                <div class="mb-3 row">
-                    <label class="col-sm-2 col-form-label"  for="">RFC sin Homoclave </label>
-                    <div class="col-sm-9">
-                        
-                    <mat-form-field class="example-full-width" appearance="fill">
-                        <mat-label>RFC sin Homoclave</mat-label>
-                        <input  matInput  >
-                    </mat-form-field>
-                    </div>
-                </div>
-            </div>
-            
-=======
             <div class="desicionContainer" *ngIf="formulario.value.rfc == 'conH'">
                 <div class="mb-3 row">
                     <label class="col-sm-2 col-form-label"  for="">RFC</label>
@@ -662,7 +624,6 @@
     
 
     
->>>>>>> 1cb5b9a50369d3758ec03427fc3bc5ef761dee4e
             <!-- input end -->
 
             
