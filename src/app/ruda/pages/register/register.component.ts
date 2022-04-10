@@ -25,11 +25,12 @@ export class RegisterComponent implements OnInit {
 
   formulario:FormGroup = this.fb.group({
     nombre:[,Validators.required,Validators.minLength(10)],
-    pais:['México'],
+    pais:[''],
     deporte:[],
     otrosDep:[],
     clasificacion:[],
     pruebaPrincipal:[],
+    rfc:['']
     
   })
   
@@ -41,8 +42,9 @@ export class RegisterComponent implements OnInit {
 
 
 
-  guardar(formulario:any){
-    console.log(formulario);
+  guardar(){
+    console.log(this.formulario.value);
+    
     
   }
   errors(formulario: FormGroup, controlName: string): any | undefined{

@@ -6,7 +6,7 @@
 <div class="row">
     <div class="col">
 
-        <form [formGroup]="formulario" >
+        <form (ngSubmit)="guardar()" [formGroup]="formulario" >
             <h2>Generales</h2>
 
             <div class="mb-3 row">
@@ -400,18 +400,57 @@
 
             <!-- input start -->
             <div class="mb-3 row">
-                <label class="col-sm-2 col-form-label"  for="">RFC </label>
+                <label class="col-sm-2 col-form-label"  for="">RFC</label>
                 <div class="col-sm-9">
+
                     
-                <mat-form-field class="example-full-width" appearance="fill">
-                    <mat-label>RFC</mat-label>
-                    <input  matInput  >
-                </mat-form-field>
+            <mat-form-field  appearance="fill">
+            <mat-label  >H/SH</mat-label>
+            <select formControlName="rfc"  matNativeControl >
+                <option  value="homoclave">Con Homoclave</option>
+                <option value="sinHomoclave">Sin Homoclave</option>
+            
+            </select>
+            </mat-form-field>
                 </div>
             </div>
             <!-- input end -->
-            
 
+            <!-- input start -->
+            <div *ngIf="formulario.value.rfc == 'homoclave'" class="formularioCondicional">
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label"  for="">RFC Homoclave </label>
+                    <div class="col-sm-9">
+                        
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>RFC con homoclave</mat-label>
+                        <input  matInput  >
+                    </mat-form-field>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- input end -->
+
+            <!-- input start -->
+            <div *ngIf="formulario.value.rfc == 'sinHomoclave'" class="formularioCondicional">
+                <div class="mb-3 row">
+                    <label class="col-sm-2 col-form-label"  for="">RFC sin Homoclave </label>
+                    <div class="col-sm-9">
+                        
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>RFC sin Homoclave</mat-label>
+                        <input  matInput  >
+                    </mat-form-field>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- input end -->
+
+            
+            
+            
             
 
 
