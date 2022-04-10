@@ -568,11 +568,12 @@
 
             
             <!-- input end -->
+            <u>Datos del INE *</u> 
 
             <!-- input start -->
             
                 <div class="mb-3 row">
-                    <label class="col-sm-2 col-form-label"  for="">Datos del INE</label>
+                    <label class="col-sm-2 col-form-label"  for="">Clave de elector</label>
                     <div class="col-sm-9">
     
                         
@@ -602,10 +603,7 @@
             
                 </div>
             </div>
-    
-
-    
-            <!-- input end -->
+                <!-- input end -->
 
             <!-- input start -->
                 
@@ -622,17 +620,215 @@
                 </div>
             </div>
     
-
+            <!-- input end -->
     
+            <u > Datos del pasaporte *</u>
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Numero del pasaporte</label>
+                <div class="col-sm-9">
+
+                    
+            <mat-form-field  appearance="fill">
+                <mat-label>número del pasaporte</mat-label>
+                <input  matInput>
+            </mat-form-field>
+            
+                </div>
+            </div>
             <!-- input end -->
 
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Fecha de emision</label>
+                <div class="col-sm-9">
+
+                    
+                    <mat-form-field appearance="fill">
+                        <mat-label>mes/día/año</mat-label>
+                        <input matInput [matDatepicker]="fechaN">
+                        <mat-datepicker-toggle matSuffix [for]="fechaN"></mat-datepicker-toggle>
+                        <mat-datepicker #fechaN></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+            <!-- input end -->
             
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Fecha de vencimiento</label>
+                <div class="col-sm-9">
+
+                    
+                    <mat-form-field appearance="fill">
+                        <mat-label>mes/día/año</mat-label>
+                        <input matInput [matDatepicker]="fechaV">
+                        <mat-datepicker-toggle matSuffix [for]="fechaV"></mat-datepicker-toggle>
+                        <mat-datepicker #fechaV></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+            <!-- input end -->
+
+            <u > Datos Visa Americana *</u>
+            
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Numero de Visa Americana</label>
+                <div class="col-sm-9">
+
+                    
+            <mat-form-field  appearance="fill">
+                <mat-label>número Visa</mat-label>
+                <input  matInput>
+            </mat-form-field>
+            
+                </div>
+            </div>
+            <!-- input end -->
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Fecha de emision</label>
+                <div class="col-sm-9">
+
+                    
+                    <mat-form-field appearance="fill">
+                        <mat-label>mes/día/año</mat-label>
+                        <input matInput [matDatepicker]="visAEm">
+                        <mat-datepicker-toggle matSuffix [for]="visAEm"></mat-datepicker-toggle>
+                        <mat-datepicker #visAEm></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+            <!-- input end -->
+            
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Fecha de vencimiento</label>
+                <div class="col-sm-9">
+
+                    
+                    <mat-form-field appearance="fill">
+                        <mat-label>mes/día/año</mat-label>
+                        <input matInput [matDatepicker]="visAVen">
+                        <mat-datepicker-toggle matSuffix [for]="visAVen"></mat-datepicker-toggle>
+                        <mat-datepicker #visAVen></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+            <!-- input end -->
+
+            <h2>Medidas Personales y Tallas Vestuario</h2>
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Altura</label>
+                <div class="col-sm-9">
+
+                    
+            <mat-form-field  appearance="fill">
+                <mat-label>en centimetros</mat-label>
+                <input type="number"  matInput>
+            </mat-form-field>
+            
+                </div>
+            </div>
+            <!-- input end -->
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Peso</label>
+                <div class="col-sm-9">
+
+                    
+            <mat-form-field  appearance="fill">
+                <mat-label>en kilogramos</mat-label>
+                <input type="number"  matInput>
+            </mat-form-field>
+            
+                </div>
+            </div>
+            <!-- input end -->
+
+            <u> Medidas Corporales</u>
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Pecho</label>
+                <div class="col-sm-9">
+
+                    
+            <mat-form-field  appearance="fill">
+                <mat-label>en centimetros</mat-label>
+                <input type="number"  matInput>
+            </mat-form-field>
+            
+                </div>
+            </div>
+            <!-- input end -->
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Cintura</label>
+                <div class="col-sm-9">
+
+                    
+            <mat-form-field  appearance="fill">
+                <mat-label>en centimetros</mat-label>
+                <input type="number"  matInput>
+            </mat-form-field>
+            
+                </div>
+            </div>
+            <!-- input end -->
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Cadera</label>
+                <div class="col-sm-9">
+
+                    
+            <mat-form-field  appearance="fill">
+                <mat-label>en centimetros</mat-label>
+                <input type="number"  matInput>
+            </mat-form-field>
+            
+                </div>
+            </div>
+            <!-- input end -->
+
+            <u>Tallas de ropa</u>
+
+            <!-- input start -->
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label"  for="">Playera</label>
+                <div class="col-sm-9">
+
+                    
+            <mat-form-field  appearance="fill">
+            <mat-label  >Talla</mat-label>
+            <select  matNativeControl >
+                <option  value="G">Grande</option>
+                <option value="M">Mediana</option>
+                <option  value="Ch">Chica</option>
+                <option value="ExCH">Extra Chica</option>
+            
+            </select>
+            </mat-form-field>
+                </div>
+            </div>
+            <!-- input end -->
+            
+
 
 
             <div class="row">
                 <div class="col-sm-11">
                     <button type="submit"
                             class="btn btn-primary float-end">guardar</button>
+
                 </div>
             </div>
         </form>
