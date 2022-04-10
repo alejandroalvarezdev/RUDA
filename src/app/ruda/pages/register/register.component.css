@@ -19,3 +19,6 @@ label,h2{color:aliceblue}
 hr{
   color: aliceblue;
 }
+input[type="file" i]{
+  color: aliceblue;
+}

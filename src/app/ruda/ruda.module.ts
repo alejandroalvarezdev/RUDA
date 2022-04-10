@@ -25,7 +25,7 @@ import { FormComponent } from './pages/form/form.component';
     CommonModule,
     MaterialModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
   ],
   exports:[
     HomeComponent
