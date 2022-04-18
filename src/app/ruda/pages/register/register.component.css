@@ -26,3 +26,15 @@ input[type="file" i]{
 u{
   color: rgb(200, 200, 0);
 }
+
+.mat-cell{
+  color:white;  
+  text-align: center;
+}
+.mat-header-cell{
+  color:white;  
+  text-align: center;
+}
+.table-header{
+  color: white;
+}

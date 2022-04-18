@@ -7,6 +7,7 @@ import { GeneralComponent } from './pages/general/general.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormComponent } from './pages/form/form.component';
+import { ConfirmDialogComponent } from './pages/confirm-dialog/confirm-dialog.component';
 
 
 
@@ -19,7 +20,8 @@ import { FormComponent } from './pages/form/form.component';
     DetailsComponent,
     GeneralComponent,
     RegisterComponent,
-    FormComponent
+    FormComponent,
+    ConfirmDialogComponent
   ],
   imports: [
     CommonModule,
